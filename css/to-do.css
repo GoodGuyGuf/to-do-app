@@ -10,3 +10,21 @@ html{
 #To-Do-Form{
     text-align: center;
 }
+
+input[type="text"]{
+    padding: 2%;
+    width: 30%;
+    font-size: medium;
+}
+
+input[type="submit"]{
+    padding: 1%;
+    background-color: white;
+    border-radius: 5%;
+}
+
+input[type="submit"]:hover{
+    background-color: coral;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
