@@ -6,7 +6,7 @@ class Form {
         
         this.textInput = document.createElement("form");
         this.textInput.id = "To-Do-Form";
-        this.textInput.innerHTML = `<input id='ToDo' type='text' name='ToDo'/><input type='submit' name='Submit'/>`;
+        this.textInput.innerHTML = `<input id='ToDo' type='text' name='ToDo' placeholder="ToDo"/><br/><br/><input type='submit' name='Submit'/>`;
         this.div.appendChild(this.textInput);
 
         this.ulDiv = document.createElement("div");
