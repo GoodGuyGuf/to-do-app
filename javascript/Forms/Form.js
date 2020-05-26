@@ -25,7 +25,17 @@ class Form {
             event.preventDefault();
             
             let value = document.getElementById("ToDo").value;
-            new ToDo(value);
+            if (value === ""){
+                const invalid = document.createElement("p");
+                invalid.innerHTML = "New ToDo's cannot be blank";
+                this.div.appendChild(invalid);
+
+                setTimeout(() => {
+                    invalid.remove();
+                }, 1200)
+            } else {
+                new ToDo(value);
+            }
         })
     }
 }
