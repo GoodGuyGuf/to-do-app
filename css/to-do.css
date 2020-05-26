@@ -15,6 +15,15 @@ input[type="text"]{
     padding: 2%;
     width: 30%;
     font-size: medium;
+    border-radius: 2px;
+    border-width: 1px;
+}
+
+input[type="text"]:hover{
+    background-color: rgb(255, 229, 219);
+    transition-duration: 0.2s;
+    border-radius: 2px;
+    border-width: 1px;
 }
 
 input[type="submit"]{
@@ -25,6 +34,11 @@ input[type="submit"]{
 
 input[type="submit"]:hover{
     background-color: coral;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
     cursor: pointer;
+    border-radius: 5%;
+}
+
+input[type="submit"]:focus{
+    outline: none;
 }
