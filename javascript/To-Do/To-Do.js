@@ -3,6 +3,20 @@ class ToDo{
         this.li = document.createElement("li");
         this.li.id = `ToDoLi`;
         this.li.innerHTML = `${value}`;
-        document.body.appendChild(this.li);
+        this.ulDiv = document.getElementById("ulDiv")
+        this.ulDiv.appendChild(this.li);
+
+        this.deleteButton = document.createElement("button");
+        this.deleteButton.id = "deleteButton";
+        this.deleteButton.innerHTML = "Delete";
+        this.li.appendChild(this.deleteButton);
+        handleOnSubmit();
+    }
+
+    handleOnSubmit = () => {
+        this.deleteButton.addEventListener("click", event => {
+            event.preventDefault();
+
+        })
     }
 }
