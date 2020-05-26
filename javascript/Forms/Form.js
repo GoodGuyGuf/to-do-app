@@ -24,8 +24,8 @@ class Form {
         this.textInput.addEventListener("submit", event => {
             event.preventDefault();
             
-            let value = document.getElementById("ToDo").value;
-            if (value === ""){
+            let input = document.getElementById("ToDo");
+            if (input.value === ""){
                 const invalid = document.createElement("p");
                 invalid.innerHTML = "New ToDo's cannot be blank";
                 this.div.appendChild(invalid);
@@ -34,7 +34,8 @@ class Form {
                     invalid.remove();
                 }, 1200)
             } else {
-                new ToDo(value);
+                new ToDo(input.value);
+                input.value = "";
             }
         })
     }
