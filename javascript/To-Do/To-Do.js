@@ -1,9 +1,6 @@
 class ToDo{
 
-    static all = [];
-
     constructor(value){
-        this.id = document.getElementsByTagName("li").length;
         this.li = document.createElement("li");
         this.li.id = 'ToDoLi';
         this.li.innerHTML = `${value}`;
@@ -15,14 +12,12 @@ class ToDo{
         this.deleteButton.innerHTML = "Delete";
         this.li.appendChild(this.deleteButton);
         this.handleOnSubmit();
-        ToDo.all.push(this);
     }
 
     handleOnSubmit = () => {
         this.deleteButton.addEventListener("click", event => {
             event.preventDefault();
             this.li.remove();
-            ToDo.all.pop();
         })
     }
 }
