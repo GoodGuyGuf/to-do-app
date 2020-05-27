@@ -27,6 +27,7 @@ class Form {
             let input = document.getElementById("ToDo");
             if (input.value === ""){
                 const invalid = document.createElement("p");
+                invalid.id = "invalidSubmission";
                 invalid.innerHTML = "New ToDo's cannot be blank";
                 this.div.appendChild(invalid);
 

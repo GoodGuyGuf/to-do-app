@@ -12,7 +12,7 @@ html{
 }
 
 input[type="text"]{
-    padding: 2%;
+    padding: 1.5%;
     width: 30%;
     font-size: medium;
     border-radius: 2px;
@@ -44,5 +44,9 @@ input[type="submit"]:focus{
 }
 
 #ulDiv{
+    text-align: center;
+}
+
+#invalidSubmission{
     text-align: center;
 }

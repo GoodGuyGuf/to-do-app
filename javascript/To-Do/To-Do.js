@@ -3,7 +3,7 @@ class ToDo{
     constructor(value){
         this.li = document.createElement("li");
         this.li.id = 'ToDoLi';
-        this.li.innerHTML = `${value}`;
+        this.li.innerHTML = `${value} `;
         this.ulDiv = document.getElementById("ulDiv");
         this.ulDiv.appendChild(this.li);
 
