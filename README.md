@@ -4,7 +4,7 @@ This is a simple application written for writing a 'to do' list.
 
 # To Use this application
 
-Fork this repo or dowload the files, type 'open index.html' in your terminal and the app will start itself in the browser.
+Fork this repo or download the files, type 'open index.html' in your terminal and the app will start itself in the browser.
 
 # Development
 
